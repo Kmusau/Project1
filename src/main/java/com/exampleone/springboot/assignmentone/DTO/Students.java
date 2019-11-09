@@ -1,22 +1,25 @@
-package com.exampleone.springboot.assignmentone.controlers.DTO;
+package com.exampleone.springboot.assignmentone.DTO;
 
 public class Students {
 
 	private String fname; 
 	private String lname; 
-	private int idnum; 
+	private String idnum; 
 	private String course;
 	
-	public Students(){
+	//public Students(){
 		
-	}
+	//}
 	
-	public Students(String fname, String lname) {
+	public Students(String fname, String lname, String idnum, String course) {
 		super();
 		this.fname=fname;
 		this.lname=lname;
+		this.idnum=idnum;
+		this.course=course;
 		// TODO Auto-generated constructor stub
 	}
+	
 	public String getFname() {
 		return fname;
 	}
@@ -29,10 +32,10 @@ public class Students {
 	public void setLname(String lname) {
 		this.lname = lname;
 	}
-	public int getIdnum() {
+	public String getIdnum() {
 		return idnum;
 	}
-	public void setIdnum(int idnum) {
+	public void setIdnum(String idnum) {
 		this.idnum = idnum;
 	}
 	public String getCourse() {
